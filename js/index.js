@@ -1,3 +1,4 @@
+// @ts-nocheck
 window.onload = () => {
 
     const input = document.querySelector('#country-input');
@@ -22,7 +23,8 @@ async function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: malaysia,
         zoom: 5,
-        styles : dayTheme
+        styles: dayTheme,
+        disableDefaultUI: true
     });
 
     infoWindow = new google.maps.InfoWindow();

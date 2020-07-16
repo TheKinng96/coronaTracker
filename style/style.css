@@ -41,7 +41,7 @@ body {
     position: fixed;
     z-index: 100;
     flex: 1;
-    left: 190px;
+    left: 10px;
     top: 10px;
 }
 
@@ -55,8 +55,8 @@ body {
 }
 
 .fb, .github, .portfolio {
-    height: 30px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,11 +79,11 @@ a:hover {
 .title {
     position: absolute;
     z-index: 100;
-    font-size: 70px;
+    font-size: 5rem;
     font-weight: bold;
     text-transform: uppercase;
-    top: 85px;
-    left: 85px;
+    top: 5rem;
+    left: 5rem;
     -webkit-text-stroke: 1.5px #ffffff;
     font-family: fantasy;
     -webkit-text-fill-color: #393b38;
@@ -93,10 +93,10 @@ a:hover {
 .search-container {
     position: absolute;
     z-index: 100;
-    top: 180px;
-    left: 85px;
-    width: 400px;
-    height: 60px;
+    top: 11.5rem;
+    left: 5rem;
+    width: 29rem;
+    height: 4rem;
     background-color: #e9e0c7de;
     border-radius: 30px;
     flex-grow: 1;
@@ -273,3 +273,24 @@ a:hover {
     margin-right:8px;
 }
 
+@media screen and (max-width:1024px) {
+    .title,.search-container,.stores-list-container {
+        left: 20px;
+    }
+
+    .title {
+        top: 400px;
+    }
+
+    .search-container {
+        top: 500px;
+    }
+
+    .stores-list-container {
+        top: 580px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    
+}
